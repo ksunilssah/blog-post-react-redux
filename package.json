@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ksunilssah/webpack-react.git"
+    "url": "git+https://github.com/ksunilssah/blog-post-react-redux.git"
   },
   "keywords": [
     "webpack",
@@ -18,9 +18,9 @@
   "author": "Sunil <ksunilssah@gmail.com> (http://localhost)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ksunilssah/webpack-react/issues"
+    "url": "https://github.com/ksunilssah/blog-post-react-redux/issues"
   },
-  "homepage": "https://github.com/ksunilssah/webpack-react#readme",
+  "homepage": "https://github.com/ksunilssah/blog-post-react-redux#readme",
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
