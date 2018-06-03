@@ -18,8 +18,14 @@
   },
   "homepage": "https://github.com/ksunilssah/blog-post-react-redux#readme",
   "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0",
+    "redux-promise": "^0.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
