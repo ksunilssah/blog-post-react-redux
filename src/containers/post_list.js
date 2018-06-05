@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
+import { Link, withRouter } from 'react-router-dom';
 import { GetPostList } from '../actions/index';
 
 
@@ -8,11 +9,11 @@ class PostList extends Component {
 
     renderPost() {
         return (
-            _.map(this.props.posts, post => {
+            _.map(this.props.posts, (post, index) => {
                 if (post.title !== null) {
                     return (
-                        <li className="list-group-item" key={post.id}>
-                            <a href={`/post/:${post.id}`}>{post.title}</a>
+                        <li className="list-group-item" key={index}>
+                            <Link to={`/details/${post.id}`}>{post.title}</Link>
                         </li>
                     )
                 }
@@ -28,6 +29,9 @@ class PostList extends Component {
 
             <div className="row justify-content-sm-center">
                 <div className="w-50">
+                    <div className="text-xs-right">
+                        <Link className="btn btn-primary" to="/posts/new">Add New Post</Link>
+                    </div>
                     <h4>Posts</h4>
                     <ul className="list-group">
                         {this.renderPost()}
