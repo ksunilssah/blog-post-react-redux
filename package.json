@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --mode development --watch --open --hot",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ksunilssah/blog-post-react-redux#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap": "^4.1.1",
     "lodash": "^4.17.10",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",

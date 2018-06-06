@@ -1,11 +1,16 @@
+html,
 body {
-    margin: 0;
-    padding: 0;
+    height: 100%;
 }
 
+@import "~bootstrap/scss/bootstrap";
 header {
-    padding: 30px;
-    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #c8c3c3;
+    h3 {
+        font-size: 20px;
+    }
+    margin-bottom: 30px;
 }
 
 .text-xs-right {
@@ -19,4 +24,27 @@ header {
 .back {
     margin: 20px 0;
     display: inline-block;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+.justify-content-sm-center {
+    padding-bottom: 150px;
+}
+
+footer {
+    background: #35363b;
+    padding: 15px;
+    color: #fff;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    p {
+        margin: 0;
+        padding: 0;
+    }
 }

@@ -28,14 +28,16 @@ class AddNewPost extends Component {
     render() {
         const { handleSubmit } = this.props;
         return (
-            <div className="row justify-content-sm-center">
-                <form className="w-50" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-                    <Field label="Title" name="title" component={this.renderField} />
-                    <Field label="Category" name="categories" component={this.renderField} />
-                    <Field label="Post content" name="content" component={this.renderField} />
-                    <button className="btn btn-primary" type="submit">Submit</button>
-                    <Link to="/" className="btn btn-danger ">Cancel</Link>
-                </form>
+            <div className="container">
+                <div className="row justify-content-sm-center">
+                    <form className="w-50" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+                        <Field label="Title" name="title" component={this.renderField} />
+                        <Field label="Category" name="categories" component={this.renderField} />
+                        <Field label="Post content" name="content" component={this.renderField} />
+                        <button className="btn btn-primary" type="submit">Submit</button>
+                        <Link to="/" className="btn btn-danger ">Cancel</Link>
+                    </form>
+                </div>
             </div>
         )
     }

@@ -26,16 +26,17 @@ class PostList extends Component {
 
     render() {
         return (
-
-            <div className="row justify-content-sm-center">
-                <div className="w-50">
-                    <div className="text-xs-right">
-                        <Link className="btn btn-primary" to="/posts/new">Add New Post</Link>
+            <div className="container">
+                <div className="row justify-content-sm-center">
+                    <div className="w-50">
+                        <div className="text-xs-right">
+                            <Link className="btn btn-primary" to="/posts/new">Add New Post</Link>
+                        </div>
+                        <h4>Posts</h4>
+                        <ul className="list-group">
+                            {this.renderPost()}
+                        </ul>
                     </div>
-                    <h4>Posts</h4>
-                    <ul className="list-group">
-                        {this.renderPost()}
-                    </ul>
                 </div>
             </div>
         )

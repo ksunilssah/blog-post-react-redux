@@ -8,7 +8,7 @@ import '../styles/style.scss';
 
 import rootReducer from './reducers/index';
 import Header from './components/Header';
-//import App from './components/App';
+import Footer from './components/Footer';
 import PostList from './containers/post_list';
 import AddNewPost from './containers/add_post';
 import PostDetail from './containers/post_details';
@@ -25,6 +25,7 @@ ReactDOM.render(
                 <Route exact path="/" component={PostList} />
                 <Route exact path="/posts/new" component={AddNewPost} />
                 <Route exact path="/details/:id" component={PostDetail} />
+                <Footer />
             </div>
         </BrowserRouter>
     </Provider>,
