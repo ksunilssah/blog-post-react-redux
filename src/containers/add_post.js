@@ -29,8 +29,8 @@ class AddNewPost extends Component {
         const { handleSubmit } = this.props;
         return (
             <div className="container">
-                <div className="row justify-content-sm-center">
-                    <form className="w-50" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+                <div className="row">
+                    <form className="w-100" onSubmit={handleSubmit(this.onSubmit.bind(this))}>
                         <Field label="Title" name="title" component={this.renderField} />
                         <Field label="Category" name="categories" component={this.renderField} />
                         <Field label="Post content" name="content" component={this.renderField} />

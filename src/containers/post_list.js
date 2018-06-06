@@ -27,8 +27,8 @@ class PostList extends Component {
     render() {
         return (
             <div className="container">
-                <div className="row justify-content-sm-center">
-                    <div className="w-50">
+                <div className="row">
+                    <div className="w-100">
                         <div className="text-xs-right">
                             <Link className="btn btn-primary" to="/posts/new">Add New Post</Link>
                         </div>

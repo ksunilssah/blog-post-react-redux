@@ -5,20 +5,20 @@ export default (state = {}, action) => {
 
     switch (action.type) {
         case GET_POST_LIST:
-        console.log(_.mapKeys(action.payload.data, 'id'));
+
             return _.mapKeys(action.payload.data, 'id');
 
         case DELETE_POST:
             return _.omit(state, action.payload);
 
         case GET_SINGLE_POST:
-            //const newPost = action.payload.data;
+            const newPost = action.payload.data;
 
-            /*const newState = { ...state };
-            newState[newPost.id] = newPost;
-            return newState;*/
-            return Object.assign({}, state.posts, { [action.payload.data.id]: action.payload.data });
-          //  return { ...state, [action.payload.data.id]: action.payload.data };
+        /*const newState = { ...state };
+        newState[newPost.id] = newPost;
+        return newState;*/
+        // return Object.assign({}, state.posts, { [action.payload.data.id]: action.payload.data });
+        //  return { ...state, [action.payload.data.id]: action.payload.data };
 
 
         default:

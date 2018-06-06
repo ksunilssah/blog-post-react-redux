@@ -24,9 +24,9 @@ class PostDetail extends Component {
         }
         return (
             <div className="container">
-                <div className="row justify-content-sm-center">
-                    <div className="w-50">
-                        <Link className="back" to="/" >Back To Index</Link>
+                <div className="row">
+                    <div className="w-100">
+                        <Link className="back" to="/" > &lt; Back To Index</Link>
                         <button onClick={this.onDeleteClick.bind(this)} className="btn btn-danger float-right">Delete Post</button>
                         <h3>{post.title}</h3>
                         <h6>{post.categories}</h6>
